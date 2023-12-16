@@ -1,0 +1,28 @@
+﻿.buscar {
+    transform: translateX(50%);
+    margin-right: calc(50% - 10px);
+    width:40%;
+}
+footer {
+    position: relative;
+    display:flex;
+    height: 25vh;
+    width: 100%;
+    bottom: 0;
+    background-color: #465663;
+    justify-content:center;
+    align-items:center;
+    gap:20%;
+}
+
+footer p{
+    margin:0;
+}
+
+footer div p{
+    margin-bottom:5px;
+    margin-left:15px;
+}
+.perfil{
+    margin-right:10px;
+}

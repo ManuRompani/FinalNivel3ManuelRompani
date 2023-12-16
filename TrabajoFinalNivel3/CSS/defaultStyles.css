@@ -1,0 +1,32 @@
+﻿/*Seccion Uno*/
+.uno {
+    scroll-margin-top: 56px;
+    height: 55vh;
+    width: 100%;
+    background-color: #8AC9FE;
+    padding-top:5vh;
+}
+.carousel {
+    height: 50vh;
+}
+.carousel img{
+    margin:auto;
+    height:50vh;
+}
+/*Seccion Dos*/
+.dos {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #8AC9FE,#edf5fc,#edf5fc, #edf5fc);
+    /*background-color: #edf5fc;*/
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    padding-bottom: 10%;
+}
+
+.card{
+    padding:0 !important;
+}
+

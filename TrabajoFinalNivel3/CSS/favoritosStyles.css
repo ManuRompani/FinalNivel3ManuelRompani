@@ -1,0 +1,20 @@
+﻿.uno {
+    display: flex;
+    min-height: 100vh;
+    height: fit-content;
+    background-color: #edf5fc;
+    padding: 5vh 0 10% 0;
+}
+
+.imagen-btn-eliminar{
+    position:absolute;
+    right:5%;
+    bottom:8%;
+    height:25px;
+}
+
+.card img{
+    margin:auto;
+    height:100px;
+    width:100px;
+}
