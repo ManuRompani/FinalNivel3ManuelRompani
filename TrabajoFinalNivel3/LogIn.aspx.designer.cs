@@ -11,7 +11,7 @@ namespace TrabajoFinalNivel3
 {
 
 
-    public partial class ChangePass
+    public partial class LogIn
     {
 
         /// <summary>
@@ -31,24 +31,6 @@ namespace TrabajoFinalNivel3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tboxPass;
-
-        /// <summary>
-        /// Control tboxNewPass.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tboxNewPass;
-
-        /// <summary>
-        /// Control tboxNewPassConfirm.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tboxNewPassConfirm;
 
         /// <summary>
         /// Control btnAceptar.

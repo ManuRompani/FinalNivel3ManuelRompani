@@ -1,18 +1,14 @@
-﻿.buscar {
-    transform: translateX(50%);
-    margin-right: calc(50% - 10px);
-    width:40%;
-}
-footer {
+﻿footer {
     position: relative;
-    display:flex;
-    height: 25vh;
+    display: flex;
+    height: 200px;
     width: 100%;
     bottom: 0;
     background-color: #465663;
-    justify-content:center;
-    align-items:center;
-    gap:20%;
+    justify-content: center;
+    align-items: center;
+    gap: 20%;
+    font-size: calc(1em);
 }
 
 footer p{
@@ -23,6 +19,10 @@ footer div p{
     margin-bottom:5px;
     margin-left:15px;
 }
-.perfil{
-    margin-right:10px;
+
+
+@media screen and (max-width: 991px) {
+    .margin-top {
+        margin-top:20px !important;
+    }
 }

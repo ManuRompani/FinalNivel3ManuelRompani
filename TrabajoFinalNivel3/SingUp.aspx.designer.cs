@@ -11,61 +11,43 @@ namespace TrabajoFinalNivel3
 {
 
 
-    public partial class Favoritos
+    public partial class SingUp
     {
 
         /// <summary>
-        /// Control ddwnPrecio.
+        /// Control tboxEmail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddwnPrecio;
+        protected global::System.Web.UI.WebControls.TextBox tboxEmail;
 
         /// <summary>
-        /// Control tboxPrecio.
+        /// Control tboxPass.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tboxPrecio;
+        protected global::System.Web.UI.WebControls.TextBox tboxPass;
 
         /// <summary>
-        /// Control ddwnMarca.
+        /// Control tboxPassConfirm.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddwnMarca;
+        protected global::System.Web.UI.WebControls.TextBox tboxPassConfirm;
 
         /// <summary>
-        /// Control ddwnCategoria.
+        /// Control btnAceptar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddwnCategoria;
-
-        /// <summary>
-        /// Control btnAplicar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAplicar;
-
-        /// <summary>
-        /// Control btnLimpiar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnLimpiar;
+        protected global::System.Web.UI.WebControls.Button btnAceptar;
     }
 }

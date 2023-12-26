@@ -11,7 +11,7 @@ namespace TrabajoFinalNivel3
 {
 
 
-    public partial class Favoritos
+    public partial class Administrar
     {
 
         /// <summary>
