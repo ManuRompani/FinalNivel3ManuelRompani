@@ -70,29 +70,34 @@
     <Content Include="Administrar.aspx" />
     <Content Include="Buscar.aspx" />
     <Content Include="ChangePass.aspx" />
+    <Content Include="CSS\administrarStyles.css" />
     <Content Include="CSS\buscarStyles.css" />
     <Content Include="CSS\changePassStyles.css" />
     <Content Include="CSS\defaultStyles.css" />
     <Content Include="CSS\favoritosStyles.css" />
     <Content Include="CSS\loginStyles.css" />
     <Content Include="CSS\masterStyle.css" />
+    <Content Include="CSS\modificarStyles.css" />
     <Content Include="CSS\perfilStyles.css" />
     <Content Include="CSS\singupStyles.css" />
+    <Content Include="CSS\verProductoStyles.css" />
     <Content Include="Default.aspx" />
     <Content Include="Favoritos.aspx" />
-    <Content Include="Images\comprar-internet-2212797.png" />
-    <Content Include="Images\icono.ico" />
-    <Content Include="Images\icono.png" />
+    <Content Include="Images\icons8-catalogue-16.png" />
+    <Content Include="Images\icons8-catalogue-66 %281%29.png" />
     <Content Include="Images\icons8-eliminar-50.png" />
     <Content Include="Images\icons8-estrella-30.png" />
     <Content Include="Images\icons8-estrella-50.png" />
     <Content Include="Images\icons8-foto-24.png" />
     <Content Include="Images\icons8-foto-50.png" />
     <Content Include="Images\icons8-usuario-not-img-96.png" />
+    <Content Include="Images\not-image-found.png" />
     <Content Include="JS\valicaciones.js" />
     <Content Include="LogIn.aspx" />
+    <Content Include="Modificar.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="SingUp.aspx" />
+    <Content Include="VerProducto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -145,6 +150,13 @@
     <Compile Include="master.Master.designer.cs">
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
+    <Compile Include="Modificar.aspx.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modificar.aspx.designer.cs">
+      <DependentUpon>Modificar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +171,13 @@
     </Compile>
     <Compile Include="SingUp.aspx.designer.cs">
       <DependentUpon>SingUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerProducto.aspx.cs">
+      <DependentUpon>VerProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerProducto.aspx.designer.cs">
+      <DependentUpon>VerProducto.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

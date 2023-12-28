@@ -1,7 +1,7 @@
 ﻿.uno {
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient( rgba(138, 201, 254, 1), rgba(11, 94, 215, 1) );
+    background-image: linear-gradient(rgb(131, 180, 158), rgb(131, 180, 158));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,14 +21,16 @@
 
 .imagen-usuario {
     transform: translateY(-50%);
-    background-color: #0B5ED7;
-    position:absolute;
+    padding: 5px;
+    background-color: #4d6e5f;
+    position: absolute;
     border-radius: 50%;
     top: 0;
 }
 
 .imagen-camara {
-    background-color: #465663;
+    padding:2px;
+    background-color: #252b28;
     position: absolute;
     border-radius: 50%;
     top: 2%;

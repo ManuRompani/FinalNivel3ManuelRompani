@@ -8,7 +8,7 @@
         <div class="row justify-content-between">
             <div class="filtro col-md-3 col-xs-12">
                 <label>Precio</label>
-                <asp:DropDownList runat="server" ID="ddwnPrecio" class="btn-group dropdown-menu mb-1">
+                <asp:DropDownList runat="server" ID="ddwnPrecio" class="form-select mb-1">
                     <asp:ListItem Text="Mayor a" class="dropdown-item" />
                     <asp:ListItem Text="Menor a" class="dropdown-item" />
                 </asp:DropDownList>
@@ -17,18 +17,18 @@
                     <asp:TextBox runat="server" ID="tboxPrecio" class="form-control" />
                 </div>
                 <label>Marca</label>
-                <asp:DropDownList runat="server" ID="ddwnMarca" class="btn-group dropdown-menu mb-3">
+                <asp:DropDownList runat="server" ID="ddwnMarca" class="form-select mb-3">
                     <asp:ListItem Text="Samsung" class="dropdown-item" />
                     <asp:ListItem Text="Motorola" class="dropdown-item" />
                 </asp:DropDownList>
                 <label>Categoría</label>
-                <asp:DropDownList runat="server" ID="ddwnCategoria" class="btn-group dropdown-menu mb-4">
+                <asp:DropDownList runat="server" ID="ddwnCategoria" class="form-select mb-4">
                     <asp:ListItem Text="Multimedia" class="dropdown-item" />
                     <asp:ListItem Text="Celular" class="dropdown-item" />
                 </asp:DropDownList>
                 <div class="mb-3">
-                    <asp:Button Text="Aplicar" ID="btnAplicar" CssClass="btn btn-primary mb-1" runat="server" />
-                    <asp:Button Text="Limpiar" ID="btnLimpiar" CssClass="btn btn-primary mb-1" runat="server" />
+                    <asp:Button Text="Aplicar" ID="btnAplicar" CssClass="btn mb-1" runat="server" />
+                    <asp:Button Text="Limpiar" ID="btnLimpiar" CssClass="btn mb-1" runat="server" />
                 </div>
             </div>
             <div class="col-md-8 col-xs-12">

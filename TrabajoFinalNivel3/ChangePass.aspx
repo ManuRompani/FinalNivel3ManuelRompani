@@ -28,8 +28,8 @@
                  <label class="invalid-feedback" id="mensajeNewPassConfirm"></label>
             </div>
             <div class="mb-3">
-                <asp:Button Text="Aceptar" class="btn btn-primary" OnClientClick='return validarChangePass()' id="btnAceptar" runat="server"/>
-                <a href="Perfil.aspx" class="btn btn-link">Cancelar</a>
+                <asp:Button Text="Aceptar" class="btn " OnClientClick='return validarChangePass()' id="btnAceptar" runat="server"/>
+                <a href="Perfil.aspx" class="btn">Cancelar</a>
             </div>
         </div>
     </section>

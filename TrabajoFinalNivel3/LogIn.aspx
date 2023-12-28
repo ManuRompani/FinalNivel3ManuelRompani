@@ -17,8 +17,8 @@
                 <label class="invalid-feedback" id="mensajeLogIn"></label>
             </div>
             <div class="mb-3">
-                <asp:Button Text="Aceptar" CssClass="btn btn-primary" OnClientClick="return validarLogIn()" runat="server" id="btnAceptar"/>
-                <a href="SingUp.aspx" class="btn btn-link">Registrarse</a>
+                <asp:Button Text="Aceptar" CssClass="btn" OnClientClick="return validarLogIn()" runat="server" id="btnAceptar"/>
+                <a href="SingUp.aspx" class="btn">Registrarse</a>
             </div>
         </div>
     </section>

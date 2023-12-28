@@ -24,11 +24,11 @@
                     <label class="invalid-feedback" id="mensajeApellido"></label>
                 </div>
                 <div class="mb-4">
-                    <a href="ChangePass.aspx" CssClass="btn btn-link">Cambiar contraseña</a>
+                    <a href="ChangePass.aspx" CssClass="btn btn-link" style="color:#252b28;">Cambiar contraseña</a>
                 </div>
                 <div class="mb-4">
-                    <asp:Button Text="Cerrar sesión" runat="server" ID="btnSesion" CssClass="btn btn-danger mb-1" />
-                    <asp:Button Text="Guardar cambios" runat="server" ID="btnGuardar" OnClientClick='return validarPerfil()' CssClass="btn btn-primary" />
+                    <asp:Button Text="Cerrar sesión" runat="server" ID="btnSesion" CssClass="btn mb-2" />
+                    <asp:Button Text="Guardar cambios" runat="server" ID="btnGuardar" OnClientClick='return validarPerfil()' CssClass="btn mb-2" />
                 </div>
             </div>
         </div>

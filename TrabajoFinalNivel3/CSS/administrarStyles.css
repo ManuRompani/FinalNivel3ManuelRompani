@@ -6,13 +6,6 @@
     padding-bottom: 10%;
 }
 
-.imagen-btn-eliminar{
-    position:absolute;
-    right:5%;
-    bottom:8%;
-    height:25px;
-}
-
 .filtro {
     display: flex;
     flex-direction: column;

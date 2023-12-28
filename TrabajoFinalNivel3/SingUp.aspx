@@ -24,8 +24,8 @@
               <label class="invalid-feedback" id="mensajePassConfirm"></label>
           </div>
           <div class="mb-4">
-              <asp:Button Text="Aceptar" CssClass="btn btn-primary" OnClientClick="return validarSingUp()" runat="server" ID="btnAceptar" />
-              <a href="LogIn.aspx" class="btn btn-link">Iniciar sesión</a>
+              <asp:Button Text="Aceptar" CssClass="btn" OnClientClick="return validarSingUp()" runat="server" ID="btnAceptar" />
+              <a href="LogIn.aspx" class="btn link">Iniciar sesión</a>
           </div>
       </div>
       </section>

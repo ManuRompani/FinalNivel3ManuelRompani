@@ -27,8 +27,8 @@
                         <asp:ListItem Text="Celular" class="dropdown-item" />
                     </asp:DropDownList>
                     <div class="mb-3">
-                        <asp:Button Text="Aplicar" ID="btnAplicar" CssClass="btn btn-primary mb-1" runat="server" />
-                        <asp:Button Text="Limpiar" ID="btnLimpiar" CssClass="btn btn-primary mb-1" runat="server" />
+                        <asp:Button Text="Aplicar" ID="btnAplicar" CssClass="btn mb-1" runat="server" />
+                        <asp:Button Text="Limpiar" ID="btnLimpiar" CssClass="btn mb-1" runat="server" />
                     </div>
                 </div>
 
@@ -36,9 +36,9 @@
                      <div class="row">
                     <%for (int i = 0; i < 5; i++)
                         { %>
-                    <div class="card m-3 col-xs-12 col-md-5">
+                    <div class="card m-3 col-xs-10 col-md-5">
                         <a href="Buscar.aspx?id=<%:i %>" id="idTipo" style="text-decoration: none !important; color: black;">
-                            <img src="https://www.ideahogar.com.ar/10967-medium_default/celular-motorola-g42-rosa-metalico-ean-994220.jpg" class="d-block rounded-start" alt="Celular" style="width:200px; height:200px;">
+                            <img src="https://www.ideahogar.com.ar/10967-medium_default/celular-motorola-g42-rosa-metalico-ean-994220.jpg" class="d-block rounded-start" alt="Celular" style="margin:auto; max-height:150px;">
                             <div class="card-body p-2">
                                 <h5 class="card-title">Celular</h5>
                                 <asp:ImageButton class="imagen-btn-eliminar" ImageUrl="Images/icons8-eliminar-50.png" runat="server" />

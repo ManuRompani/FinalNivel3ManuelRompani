@@ -1,14 +1,14 @@
 ﻿footer {
-    position: relative;
     display: flex;
     height: 200px;
     width: 100%;
-    bottom: 0;
-    background-color: #465663;
+    background-color: #252b28;
     justify-content: center;
     align-items: center;
     gap: 20%;
     font-size: calc(1em);
+    color: #FBF9FA;
+    padding:20px;
 }
 
 footer p{
@@ -20,6 +20,15 @@ footer div p{
     margin-left:15px;
 }
 
+.btn {
+    background-color: #4f8066 !important;
+    color: #FBF9FA;
+}
+
+    .btn:hover {
+        background-color: #4a946e !important;
+        color: #FBF9FA;
+    }
 
 @media screen and (max-width: 991px) {
     .margin-top {

@@ -1,5 +1,5 @@
 ﻿body {
-    background-image: linear-gradient( rgba(138, 201, 254, 1), rgba(237, 245, 252, 1) );
+    background-image: linear-gradient(rgb(131, 180, 158), rgb(131, 180, 158));
 }
 
 
@@ -31,6 +31,7 @@
 
 .card{
     padding:0 !important;
+    border:0 !important;
 }
 
 @media screen and (max-width: 768px) {
