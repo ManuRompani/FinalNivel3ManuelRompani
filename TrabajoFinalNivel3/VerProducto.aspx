@@ -7,24 +7,27 @@
         <div class="container justify-content-center">
             <div class="row justify-content-center" style="padding-top: calc(10vh); align-items: center;">
                 <div class="col-xs-12 col-md-6 ajustar-imagen">
-                    <asp:Image ImageUrl="https://www.ideahogar.com.ar/10967-medium_default/celular-motorola-g42-rosa-metalico-ean-994220.jpg" class="d-block rounded" runat="server" Style="max-height: 400px;" />
+                    <%if (Session["listaArticulos"] != null && Request.QueryString["id"] != null)
+                        { %>
+                    <img src="<%= articulo.UrlImagen %>" onerror="this.src='Images/not-image-found.png'" class="d-block rounded" Style="max-height: 400px;"/>
                 </div>
                 <div class="col-xs-12 col-md-6 margen-top">
-                    <h3>Moto G9 Power</h3>
+                    <h3><%= articulo.Nombre %></h3>
                     <div class="contenedor-caracteristicas">
                         <ul>
-                            <li>Motorola</li>
-                            <li>Celular</li>
+                            <li><%= articulo.Marca.Descripcion %></li>
+                            <li><%= articulo.Categoria.Descripcion %></li>
                         </ul>
                     </div>
-                    <div class="contenedor-descripcion">
+                    <div >
                         <p>
-                            Este es un celular con una batería de alta duración. Preparado para estar cuando mas lo necesites
+                            <%= articulo.Descripcion %>
                         </p>
                     </div>
                     <div class="favoritos">
-                        <img class="estrella" src="Images/icons8-estrella-50.png" />
-                        <p>Agregar a favoritos</p>
+                        <asp:ImageButton ImageUrl="Images/icons8-estrella-50(blanca).png" ID="estrellaBlanca" visible="true" OnClick="estrellaBlanca_Click" runat="server" CssClass="estrella"/>
+                        <asp:ImageButton ImageUrl="Images/icons8-estrella-50(negra).png" Visible="false" ID="estrellaNegra" OnClick="estrellaNegra_Click" runat="server" CssClass="estrella" />
+                        <asp:Label Text="Agregar a favoritos" ID="labelFavoritos" class="p" runat="server" />
                     </div>
                 </div>
             </div>
@@ -32,19 +35,30 @@
                 <h5>Productos similares</h5>
             </div>
             <div class="row justify-content-center">
-                <%for (int i = 0; i < 3; i++)
-                    { %>
+                <%if (articulosRelacionados != null && articulosRelacionados.Count > 0)
+                    {
+                        for (int i = 0; i < articulosRelacionados.Count && i < 3; i++)
+                        {
+                            if (articulosRelacionados[i].Id != articulo.Id)
+                            { %>
                 <div class="col-xs-12 col-md-4">
                     <div class="card m-3 col-xs-12 col-md-5" style="width: 300px;">
-                        <a href="Buscar.aspx?id=<%:i %>" id="idTipo" style="text-decoration: none !important; color: black;">
-                            <img src="https://www.ideahogar.com.ar/10967-medium_default/celular-motorola-g42-rosa-metalico-ean-994220.jpg" class="d-block rounded" alt="Celular" style="max-height:150px; margin:auto;">
+                        <a href="VerProducto.aspx?id=<%:articulosRelacionados[i].Id %>" id="idTipo" style="text-decoration: none !important; color: black;">
+                            <img src="<%:articulosRelacionados[i].UrlImagen %>" onerror="this.src='Images/not-image-found.png'" class="d-block rounded" alt="Celular" style="max-height:150px; margin:auto;">
                             <div class="card-body p-2">
-                                <h5 class="card-title">Celular</h5>
+                                <h5 class="card-title"><%: articulosRelacionados[i].Nombre %></h5>
                             </div>
                         </a>
                     </div>
                 </div>
-                <%} %>
+                <%}
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Response.Redirect("Default.aspx", false);
+                    }%>
             </div>
         </div>
     </section>

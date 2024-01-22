@@ -32,10 +32,13 @@
                                     <li class="nav-item">
                                         <a class="nav-link link-dark" style="color: #FBF9FA !important;" href="Favoritos.aspx">Favoritos</a>
                                     </li>
+                                    <li class="nav-item" id="linkAdmin" runat="server" visible="false">
+                                        <a class="nav-link link-dark" style="color: #FBF9FA !important;" href="Administrar.aspx">Administrar</a>
+                                    </li>
                                 </ul>
-                                <div class="d-flex buscar me-auto" style="min-width:40%;">
-                                    <asp:TextBox runat="server" class="form-control me-3" type="search" placeholder="Buscar" aria-label="Buscar" />
-                                <asp:Button Text="Buscar" runat="server" class="btn" type="submit" />
+                                <div class="d-flex buscar me-auto" style="min-width: 40%;">
+                                    <asp:TextBox runat="server" ID="tboxBuscar" class="form-control me-3" type="search" placeholder="Buscar" aria-label="Buscar" />
+                                    <asp:Button Text="Buscar" OnClick="Buscar_Click" runat="server" class="btn" type="submit" />
                             </div>
                                 <a class="nav-link link-dark me-3 margin-top" style="color: #FBF9FA !important;" href="Perfil.aspx">Perfil</a>
                         </div>

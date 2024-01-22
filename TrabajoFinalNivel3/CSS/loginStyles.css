@@ -2,6 +2,7 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgb(131, 180, 158), rgb(131, 180, 158));
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,14 +12,9 @@
     transform: translateY(56px);
     background-color: #fafbfc;
     height: fit-content;
-    width: 40vw;
-    display: flex;
+    width: 50%;
     border: solid 2px #bfbfbf;
     border-radius: 20px;
-    justify-content: center;
-}
-
-.contenedor {
     padding: 2% 2% 0 2%;
 }
 
@@ -27,5 +23,16 @@
     margin: 2% 0 2% 0;
     font-size: 25px;
     color: #fafbfc;
+}
+
+@media screen and (max-width: 750px) {
+    .contenedor {
+        width: 90%;
+        background-color: #fafbfc;
+        height: fit-content;
+        border: solid 2px #bfbfbf;
+        border-radius: 20px;
+        padding: 2% 2% 0 2%;
+    }
 }
 

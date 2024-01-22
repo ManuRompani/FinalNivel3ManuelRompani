@@ -68,7 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrar.aspx" />
+    <Content Include="Articulos.aspx" />
     <Content Include="Buscar.aspx" />
+    <Content Include="Categorias.aspx" />
     <Content Include="ChangePass.aspx" />
     <Content Include="CSS\administrarStyles.css" />
     <Content Include="CSS\buscarStyles.css" />
@@ -82,21 +84,25 @@
     <Content Include="CSS\singupStyles.css" />
     <Content Include="CSS\verProductoStyles.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="Favoritos.aspx" />
     <Content Include="Images\icons8-catalogue-16.png" />
     <Content Include="Images\icons8-catalogue-66 %281%29.png" />
     <Content Include="Images\icons8-eliminar-50.png" />
     <Content Include="Images\icons8-estrella-30.png" />
+    <Content Include="Images\icons8-estrella-50%28blanca%29.png" />
+    <Content Include="Images\icons8-estrella-50%28negra%29.png" />
     <Content Include="Images\icons8-estrella-50.png" />
     <Content Include="Images\icons8-foto-24.png" />
     <Content Include="Images\icons8-foto-50.png" />
     <Content Include="Images\icons8-usuario-not-img-96.png" />
     <Content Include="Images\not-image-found.png" />
-    <Content Include="JS\valicaciones.js" />
+    <Content Include="JS\validaciones.js" />
     <Content Include="LogIn.aspx" />
-    <Content Include="Modificar.aspx" />
+    <Content Include="Marcas.aspx" />
     <Content Include="Perfil.aspx" />
     <Content Include="SingUp.aspx" />
+    <Content Include="Usuarios.aspx" />
     <Content Include="VerProducto.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -108,12 +114,26 @@
     <Compile Include="Administrar.aspx.designer.cs">
       <DependentUpon>Administrar.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Articulos.aspx.cs">
+      <DependentUpon>Articulos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articulos.aspx.designer.cs">
+      <DependentUpon>Articulos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Buscar.aspx.cs">
       <DependentUpon>Buscar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Buscar.aspx.designer.cs">
       <DependentUpon>Buscar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Categorias.aspx.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categorias.aspx.designer.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
     </Compile>
     <Compile Include="ChangePass.aspx.cs">
       <DependentUpon>ChangePass.aspx</DependentUpon>
@@ -129,6 +149,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Favoritos.aspx.cs">
       <DependentUpon>Favoritos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -143,19 +170,19 @@
     <Compile Include="LogIn.aspx.designer.cs">
       <DependentUpon>LogIn.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Marcas.aspx.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Marcas.aspx.designer.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="master.Master.designer.cs">
       <DependentUpon>master.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Modificar.aspx.cs">
-      <DependentUpon>Modificar.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Modificar.aspx.designer.cs">
-      <DependentUpon>Modificar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Perfil.aspx.cs">
       <DependentUpon>Perfil.aspx</DependentUpon>
@@ -171,6 +198,13 @@
     </Compile>
     <Compile Include="SingUp.aspx.designer.cs">
       <DependentUpon>SingUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usuarios.aspx.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usuarios.aspx.designer.cs">
+      <DependentUpon>Usuarios.aspx</DependentUpon>
     </Compile>
     <Compile Include="VerProducto.aspx.cs">
       <DependentUpon>VerProducto.aspx</DependentUpon>
@@ -189,6 +223,29 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.csproj">
+      <Project>{af186d54-ccaf-476e-8113-8edc44020e9c}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{7a14aeaf-55af-4b7b-b21b-82b3ae9022f7}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{c55f6ac9-93c8-48ba-9e41-f093c32bd5e3}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Validaciones\Services.csproj">
+      <Project>{766b83cf-c504-4b31-a33d-2a9d22cd9e37}</Project>
+      <Name>Services</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\ImagenesArticulos\" />
+    <Folder Include="Images\ImagenesCategorias\" />
+    <Folder Include="Images\ImagenesUsuarios\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -15,6 +15,15 @@ namespace TrabajoFinalNivel3
     {
 
         /// <summary>
+        /// Control imagenUsuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imagenUsuario;
+
+        /// <summary>
         /// Control tboxEmail.
         /// </summary>
         /// <remarks>
@@ -42,13 +51,13 @@ namespace TrabajoFinalNivel3
         protected global::System.Web.UI.WebControls.TextBox tboxApellido;
 
         /// <summary>
-        /// Control btnSesion.
+        /// Control cambiarImagen.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSesion;
+        protected global::System.Web.UI.HtmlControls.HtmlInputFile cambiarImagen;
 
         /// <summary>
         /// Control btnGuardar.
@@ -58,5 +67,14 @@ namespace TrabajoFinalNivel3
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnGuardar;
+
+        /// <summary>
+        /// Control btnSesion.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSesion;
     }
 }

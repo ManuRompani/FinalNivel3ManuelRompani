@@ -1,5 +1,5 @@
 ﻿.uno {
-    height: 100vh;
+    height: 120vh;
     width: 100%;
     background-image: linear-gradient(rgb(131, 180, 158), rgb(131, 180, 158));
     display: flex;
@@ -8,36 +8,39 @@
 }
 
 .contenedor {
-    position: relative;
     background-color: #fafbfc;
     height: fit-content;
     width: 50%;
     display: flex;
     border: solid 2px #bfbfbf;
-    border-radius: 10px;
+    border-radius: 20px;
     justify-content: center;
-    transform: translateY(-5%);
+    padding: 0 2% 0 2%;
+
+}
+
+.contenedor-imagen {
+    display:flex;
+    justify-content:center;
+    height: 70px;
 }
 
 .imagen-usuario {
-    transform: translateY(-50%);
-    padding: 5px;
     background-color: #4d6e5f;
-    position: absolute;
+    transform:translateY(-50%);
+    height: 70px;
     border-radius: 50%;
-    top: 0;
 }
 
-.imagen-camara {
-    padding:2px;
-    background-color: #252b28;
-    position: absolute;
-    border-radius: 50%;
-    top: 2%;
-    left: 52%;
-}
 
-.contenedor .row{
-    width:100%;
-    padding:8% 5% 0 5%;
+@media screen and (max-width: 750px) {
+    .contenedor {
+        width: 90%;
+        background-color: #fafbfc;
+        height: fit-content;
+        display: flex;
+        border: solid 2px #bfbfbf;
+        border-radius: 20px;
+        justify-content: center;
+    }
 }

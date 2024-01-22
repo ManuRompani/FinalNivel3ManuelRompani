@@ -24,6 +24,15 @@ namespace TrabajoFinalNivel3
         protected global::System.Web.UI.WebControls.TextBox tboxEmail;
 
         /// <summary>
+        /// Control mensajeEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl mensajeEmail;
+
+        /// <summary>
         /// Control tboxPass.
         /// </summary>
         /// <remarks>
