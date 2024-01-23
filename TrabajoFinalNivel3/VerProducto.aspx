@@ -15,6 +15,7 @@
                     <h3><%= articulo.Nombre %></h3>
                     <div class="contenedor-caracteristicas">
                         <ul>
+                            <li><%= articulo.Precio %></li>
                             <li><%= articulo.Marca.Descripcion %></li>
                             <li><%= articulo.Categoria.Descripcion %></li>
                         </ul>

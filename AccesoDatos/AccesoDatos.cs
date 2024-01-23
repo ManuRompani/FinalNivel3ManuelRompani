@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
+using System.Net.Sockets;
 
 namespace AccesoDatos
 {
@@ -21,7 +22,7 @@ namespace AccesoDatos
         //Constructor, inicia conexion y comando
         public AccesoDatos()
         {
-            conexion = new SqlConnection("server=.\\SQLEXPRESS; database=CATALOGO_WEB_DB; integrated security=true");
+            conexion = new SqlConnection("workstation id=CATALOGO_WEB_ROMPANI.mssql.somee.com;packet size=4096;user id=ManuelRompani_SQLLogin_1;pwd=w1mwf5n77t;data source=CATALOGO_WEB_ROMPANI.mssql.somee.com;persist security info=False;initial catalog=CATALOGO_WEB_ROMPANI");
             comando = new SqlCommand();
         }
 

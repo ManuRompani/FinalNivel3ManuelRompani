@@ -1,6 +1,6 @@
 ﻿using Dominio;
 using Negocio;
-using Services;
+using Servicios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,7 +36,7 @@ namespace TrabajoFinalNivel3
                             negocio.changePass(usuario, newPass);
                             usuario.Contraseña = newPass;
 
-                            EmailService email = new EmailService();
+                            Email email = new Email();
                             email.crearCorreo(usuario.Email, "Su contraseña ha sido modificada", "Cambio de contraseña");
                             email.enviarCorreo();
 

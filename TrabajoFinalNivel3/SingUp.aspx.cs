@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Dominio;
 using Negocio;
-using Services;
+using Servicios;
 
 namespace TrabajoFinalNivel3
 {
@@ -32,7 +32,7 @@ namespace TrabajoFinalNivel3
 
                         usuario.Id = negocio.agregar(usuario, false);
 
-                        EmailService email = new EmailService();
+                        Email email = new Email();
                         email.crearCorreo(usuario.Email, "Muchas gracias por unirte...♥", "Bienvenido!");
                         email.enviarCorreo();
 
@@ -52,7 +52,7 @@ namespace TrabajoFinalNivel3
             {
 
                 Session["Error"] = ex.Message;
-                Response.Redirect("Error", false);
+                Response.Redirect("Error.aspx", false);
             }
         }
     }

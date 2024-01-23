@@ -237,9 +237,9 @@
       <Project>{c55f6ac9-93c8-48ba-9e41-f093c32bd5e3}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Validaciones\Services.csproj">
-      <Project>{766b83cf-c504-4b31-a33d-2a9d22cd9e37}</Project>
-      <Name>Services</Name>
+    <ProjectReference Include="..\Servicios\Servicios.csproj">
+      <Project>{3aae186b-7a57-4882-8c72-2e198d8e68e2}</Project>
+      <Name>Servicios</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
